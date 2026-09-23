@@ -1,16 +1,43 @@
-# isl_translator_app
+# Indian Sign Language (ISL) Translator App
 
-A new Flutter project.
+An AI-powered mobile application designed to facilitate communication between hearing and non-hearing users by translating Indian Sign Language into speech and converting spoken input into sign-based visual interaction.
 
-## Getting Started
+## 📌 Overview
 
-This project is a starting point for a Flutter application.
+Communication can be challenging for individuals who use sign language when interacting with people who do not understand it. The Indian Sign Language Translator App aims to bridge this communication gap through a mobile-based translation system.
 
-A few resources to get you started if this is your first Flutter project:
+The application uses the device camera to capture sign language gestures and processes them using a machine learning model to identify the corresponding signs. The recognized signs can then be converted into spoken output using text-to-speech technology.
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
+The application also supports the reverse communication flow, allowing spoken input to be converted into a sign-based visual representation using 3D models.
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+## ✨ Key Features
+
+- 📷 Real-time camera-based sign recognition
+- 🤟 Indian Sign Language gesture translation
+- 🔊 Sign-to-speech conversion
+- 🎙️ Speech-to-sign interaction
+- 🧑‍💻 Interactive 3D model representation
+- 📱 Cross-platform mobile application
+- ⚡ TensorFlow Lite-based on-device inference
+- 🔄 Two-way communication support
+
+## 🔄 Communication Flow
+
+### Sign → Speech
+
+```text
+Camera
+   ↓
+Sign Language Gesture
+   ↓
+Image Processing
+   ↓
+TensorFlow Lite Model
+   ↓
+Recognized Sign
+   ↓
+Text
+   ↓
+Text-to-Speech
+   ↓
+Audio Output
