@@ -1,0 +1,28 @@
+name: isl_translator_app
+description: ISL to Text/Speech Translator App
+version: 1.0.0
+
+environment:
+  sdk: '>=3.8.0 <4.0.0'
+
+flutter:
+  assets:
+    - assets/images/isl_logo.png
+    - assets/models/isl_model.tflite
+    - assets/ISL_Dataset/
+
+dependencies:
+  flutter:
+    sdk: flutter
+  camera: ^0.11.2
+  image: ^4.0.0
+  flutter_tts: ^4.0.0
+  speech_to_text: ^7.2.0
+  video_player: ^2.7.0
+  tflite_flutter: ^0.11.0
+  ffi: ^2.1.0
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^6.0.0

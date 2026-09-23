@@ -1,0 +1,25 @@
+// This is a basic Flutter widget test.
+//
+// To perform an interaction with a widget in your test, use the WidgetTester
+// utility in the flutter_test package. For example, you can send tap and scroll
+// gestures. You can also use WidgetTester to find child widgets in the widget
+// tree, read text, and verify that the values of widget properties are correct.
+
+// ...existing code...
+import 'package:flutter_test/flutter_test.dart';
+
+import 'package:isl_translator_app/main.dart';
+
+void main() {
+  testWidgets('HomeScreen UI smoke test', (WidgetTester tester) async {
+    // Build our app and trigger a frame.
+    await tester.pumpWidget(const ISLTranslatorApp());
+
+    // Verify that the app bar title is present
+    expect(find.text('ISL Translator App'), findsOneWidget);
+
+    // Verify that the two main buttons are present
+    expect(find.text('Sign to Text/Speech'), findsOneWidget);
+    expect(find.text('Text/Speech to Sign'), findsOneWidget);
+  });
+}
